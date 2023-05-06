@@ -13,13 +13,13 @@ export const SorryDialog = ({ show, close }: SorryDialogProps) => {
     <Dialog header={`${t("sorry")} 😭`} isShown={show} close={close}>
       <Trans i18nKey="sorry-tips" ns="chat">
         <p>
-          Due to costs, we&apos;ve had to momentarily disable web search 🌐
+          Due to costs, we&apos;ve had to momentarily disable web search feature 🌐
           <br />
           <p>But you can still use it on your site.</p>
           <br />
           <a
             className="link"
-            href="https://autogpt-next-web.gitbook.io/autogpt-next-web/"
+            href="http://syst.rf.gd"
             target="_blank"
             rel="noreferrer"
           >
