@@ -26,7 +26,7 @@ export const SignInDialog = ({ show, close }: SignInDialogProps) => {
           <a className="link" onClick={() => void signIn()}>
             sign in
           </a>
-          to deploy an Agent! 🤖
+          to deploy an Agent! , Sign In System is provided by Syst Aolakh Auth 1.1 🤖
         </p>
       </Trans>
     </Dialog>
