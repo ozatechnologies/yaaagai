@@ -11,21 +11,21 @@ interface LayoutProps {
 
 const DefaultLayout = (props: LayoutProps) => {
   const description =
-    "Assemble, configure, and deploy autonomous AI Agents in your browser.";
+    "Assemble, configure, and deploy autonomous AI Agents in your browser as lowest cost.";
   return (
-    <div className="flex flex-col bg-gradient-to-b from-[#2B2B2B] to-[#1F1F1F]">
+    <div className="flex flex-col bg-gradient-to-b from-[#9491E2] to-[#AFF2D8]">
       <Head>
-        <title>AutoGPT Next Web</title>
+        <title>YAAAGIA</title>
         <meta name="description" content={description} />
         <meta
           property="og:title"
-          content="AutoGPT Next Web: Autonomous AI in your browser 🤖"
+          content="SYST YAAAGI Tool 🤖"
         />
         <meta
           property="og:description"
-          content="Assemble, configure, and deploy autonomous AI Agents in your browser."
+          content="Assemble, configure, and deploy autonomous AI Agents in your browser at no-cost."
         />
-        <meta property="og:url" content="https://auto-agentgpt.com/" />
+        <meta property="og:url" content="http://syst.rf.gd" />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="640" />
         <meta property="og:type" content="website" />
