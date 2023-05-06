@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, Page, Text, StyleSheet, Font ,View} from "@react-pdf/renderer";
+import { Document, Page, Text, StyleSheet, Font, View } from "@react-pdf/renderer";
 
 Font.register({
   family: "Roboto,SourceHanSansCN",
@@ -19,7 +19,7 @@ Font.registerHyphenationCallback((word: string) => {
   }
 
   return Array.from(word)
-    .map((char) => [char, ''])
+    .map((char) => [char, ""])
     .reduce((arr, current) => {
       arr.push(...current);
       return arr;
@@ -43,6 +43,13 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     lineHeight: 1.5,
   },
+  copyright: {
+    fontSize: 10,
+    fontFamily: "Roboto,SourceHanSansCN",
+    marginVertical: 10,
+    color: "#999",
+    textAlign: "center",
+  },
 });
 
 // NOTE: This should only ever be imported dynamically to reduce load times
@@ -57,6 +64,7 @@ const MyDocument: React.FC<{
           <HorizontalRule />
         </>
       ))}
+      <Text style={styles.copywright}>All rights reserved © SYST AI Platforms</Text>
     </Page>
   </Document>
 );
